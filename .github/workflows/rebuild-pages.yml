@@ -1,0 +1,53 @@
+# Rebuild the generated parts of the site when their sources change on GitHub,
+# for example after an upload of a new pubs/plessRefs.bib in the web interface.
+# tools/build.py writes the publication list (from pubs/plessRefs.bib) and the
+# left column of every page (from tools/sidebar.html); see CLAUDE.md.
+name: Rebuild pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - pubs/plessRefs.bib
+      - tools/**
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+# One run at a time, each from the newest main, so a run never pushes on top of an old tree.
+concurrency:
+  group: rebuild-pages
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Build
+        run: python3 tools/build.py
+
+      - name: Commit and push the rebuilt pages
+        id: commit
+        run: |
+          if git diff --quiet; then
+            echo "The pages are already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Rebuild pages from pubs/plessRefs.bib and tools/"
+          git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # A push made with the workflow's own token may not start a GitHub Pages build, so ask for one.
+      - name: Publish the new commit
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"

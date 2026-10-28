@@ -9,14 +9,14 @@ Robert Pless's personal website. GitHub Pages serves it at https://pless.github.
 - **Course pages** (no left column): `3212/` (Algorithms), `classes/ComputerVision/` (with the lecture slides).
 - **Files:** `papers/` (paper PDFs), `webImages/` (photos), `code/` (zip files), `longCVbibtex.pdf` (CV), `pubs/plessRefs.bib` (all publications). They have the same paths as on the GWU site, so the relative links in the BibTeX file work as they are.
 - **Style and scripts:** `style.css` (all pages), `people.js` (the student photos), `publications.js` (the publication views).
-- **Build:** `tools/build.py`; `tools/sidebar.html` (the shared left column); `tools/bib2html.py` (the publication list).
+- **Build:** `tools/build.py`; `tools/sidebar.html` (the shared left column); `tools/bib2html.py` (the publication list); `.github/workflows/rebuild-pages.yml` (runs the build on GitHub).
 - **Notes:** `notes/` (dated files).
 
 ## How to change the site
 - Text of a page: edit the page's `.html` file, inside `<main>`.
 - Left column or menu: edit `tools/sidebar.html`, then run `python3 tools/build.py`.
 - New paper: add the entry to `pubs/plessRefs.bib`, put the PDF in `papers/`, set `url={papers/NAME.pdf}`, then run `python3 tools/build.py`. Topic tags go in the `annote` field: `selected`, `geometry`, `ML`, `social`, `ugrad`.
-- `pubs/plessRefs.bib` changed on GitHub (an upload or a web edit): the publications page does not change by itself, because GitHub Pages does not run the build. Pull, run `python3 tools/build.py`, then commit and push `publications.html`.
+- Changes on GitHub (an upload or a web edit) to `pubs/plessRefs.bib` or `tools/`: the Action `.github/workflows/rebuild-pages.yml` runs the build and commits the rebuilt pages as "github-actions[bot]". The site shows the change about 2 minutes later. Pull before you work locally.
 - Look at the result: run `python3 -m http.server 8790` in this folder, then open http://localhost:8790.
 - Publish: commit and push to `main`. GitHub Pages shows the new version after about a minute.
 
@@ -28,6 +28,7 @@ Robert Pless's personal website. GitHub Pages serves it at https://pless.github.
 - `tools/bib2html.py` keeps the old numbers and order: year descending, then BibTeX key descending.
 - The PDFs, photos, slides and code are in the repository (about 330 MB), so the site does not depend on the GWU server. Each file must stay under 100 MB (GitHub limit). Do not use Git LFS: GitHub Pages does not serve LFS files.
 - The build uses only the Python 3 standard library.
+- The build also runs on GitHub (2026-10-28, Robert's request): GitHub Pages serves files and runs no code, so without the Action an upload of the bib file in the web interface would not change the site. The Action commits the generated pages back to `main`, so the files in the repository stay the files on the site.
 
 ## Conventions
 - The look: gray page, gray cards, a left column with photo, contact and menu, section headings with an olive top rule, green links. The colors are CSS variables at the top of `style.css`. Link colors pass WCAG AA contrast on the card gray.
