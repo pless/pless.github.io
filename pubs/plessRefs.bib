@@ -15,12 +15,13 @@
 @string{ICCP = "Proc. International Conference on Computational Photography (ICCP)"}
 @string{ICPR = "Proc. International Conference on Pattern Recognition (ICPR)"}
 @string{IJCAI = "Proc. International Joint Conference on Artificial Intelligence"}
-@string{CVPR ="Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"}
+@string{CVPR ="Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"}
+@string{CVPRW ="Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition, Workshop (CVPRW)"}
 @string{ICCV = "Proc. International Conference on Computer Vision (ICCV)"}
 @string{MW = "Proc. IEEE Workshop on Visual Motion"}
-@string{3DV = "Proc. IEEE International Conference on 3D Vision (3DV)"}
+@string{TDV = "Proc. IEEE International Conference on 3D Vision (3DV)"}
 @string{SMILE = "Proc. Workshop on 3D Structure from Multiple Images"}
-@string{WACV = "Proc. IEEE Workshop on Applications of Computer Vision"}
+@string{WACV = "Proc. IEEE Winter Conference on the Applications of Computer Vision"}
 @string{WACV2 = "IEEE Winter Conference on Computer Vision (WACV)"},
 @string{VISN = "Proc. IEEE Workshop on Video/Image Sensor Networks"} 
 
@@ -48,21 +49,88 @@
 @string{JOSAA = "Journal of the Optical Society of America A"}
 @string{PRSLA = "Proc. Royal Society, London A"}
 @string{PRSLB = "Proc. Royal Society, London B"}
-@STRING{CfAR = "Center for Automation Research"}
-
 %***********************************
 % ABBREVIATIONS FOR INSTITUTIONS *
 %***********************************
-% 2023
-@article{jiang2023dp2,
-  title={DP2-Pub: Differentially Private High-Dimensional Data Publication with Invariant Post Randomization},
-  author={Jiang, Honglu and Yu, Haotian and Cheng, Xiuzhen and Pei, Jian and Pless, Robert and Yu, Jiguo},
-  journal={IEEE Transactions on Knowledge and Data Engineering},
-  year={2023},
-  publisher={IEEE},
-url={https://arxiv.org/abs/2208.11693}
+@STRING{CfAR = "Center for Automation Research"}
+# Patents
+@misc{schillebeeckx2019camera,
+  title={Camera calibration with lenticular arrays},
+  author={Schillebeeckx, Ian and Pless, Robert},
+  year={2019},
+  month=oct # "~22",
+  note={US Patent 10,455,138}
+}
+@inproceedings{robbins2025will,
+  title={Will It Zero-Shot?: Predicting Zero-Shot Classification Performance For Arbitrary Queries},
+  author={Robbins, Kevin and Liu, Xiaotong and Wu, Yu and Sun, Le and McPeak, Grady and Stylianou, Abby and Pless, Robert},
+  booktitle={2025 IEEE International Conference on Data Mining Workshops (ICDMW)},
+  pages={1513--1523},
+  year={2025},
+  organization={IEEE}
+}
+%% 2025
+@inproceedings{kolouju2025good4cir,
+  title={good4cir: Generating detailed synthetic captions for composed image retrieval},
+  author={Kolouju, Pranavi and Xing, Eric and Pless, Robert and Jacobs, Nathan and Stylianou, Abby},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference, Workshops},
+  pages={3148--3157},
+  year={2025}
 }
 
+@inproceedings{xing2025context,
+  title={ConText-CIR: Learning from Concepts in Text for Composed Image Retrieval},
+  author={Xing, Eric and Kolouju, Pranavi and Pless, Robert and Stylianou, Abby and Jacobs, Nathan},
+  booktitle=CVPR,
+  pages={19638--19648},
+  year={2025}
+}
+@article{xing2026quari,
+  title={Quari: Query adaptive retrieval improvement},
+  author={Xing, Eric and Stylianou, Abby and Pless, Robert and Jacobs, Nathan},
+  journal={Advances in Neural Information Processing Systems},
+  volume={38},
+  pages={62890--62911},
+  year={2026}
+}
+
+% 2024
+@inproceedings{krueger2024enabling,
+  title={Enabling Understanding of AI Model Behavior Through Visualization},
+  author={Krueger, Christine and Manning, Justine and Pless, Robert and Szajnfarber, Zoe},
+  booktitle={Conference on Systems Engineering Research},
+  pages={511--517},
+  year={2024},
+  organization={Springer}
+}
+
+@inproceedings{mcpeak2024llm,
+  title={An {LLM's} Medical Testing Recommendations in a {N}igerian Clinic: Potential and Limits of Prompt Engineering for Clinical Decision Support},
+  author={McPeak, Grady and Sautmann, Anja and George, Ohia and Hallal, Adham and Simal, Eduardo Aranc{\'o}n and Schwartz, Aaron L and Abaluck, Jason and Ravi, Nirmal and Pless, Robert},
+  booktitle={2024 IEEE 12th International Conference on Healthcare Informatics (ICHI)},
+  pages={586--591},
+  year={2024},
+  organization={IEEE}
+}
+
+@article{zhang2024sg,
+  title={{SG$\times$ P}: a sorghum genotype$\times$ phenotype prediction dataset and benchmark},
+  author={Zhang, Zeyu and Pless, Robert and Shakoor, Nadia and Carnahan, Austin and Stylianou, Abby},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
+}
+%2023
+@article{jiang2023dp2,
+  title={Dp2-pub: Differentially private high-dimensional data publication with invariant post randomization},
+  author={Jiang, Honglu and Yu, Haotian and Cheng, Xiuzhen and Pei, Jian and Pless, Robert and Yu, Jiguo},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  volume={35},
+  number={10},
+  pages={10831--10844},
+  year={2023},
+  publisher={IEEE}
+}
 %%2022
 @inproceedings{zhang2022does,
   title={What Does Learning About Time Tell About Outdoor Scenes?},
@@ -110,7 +178,7 @@ url={https://www.frontiersin.org/articles/10.3389/frai.2022.872858/full}
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (CVPPA Workshop)},
   pages={1352--1361},
   year={2021},
-  url={https://openaccess.thecvf.com/content/ICCV2021W/CVPPA/papers/Stylianou_Classification_and_Visualization_of_Genotype_x_Phenotype_Interactions_in_Biomass_ICCVW_2021_paper.pdf}A
+url={https://openaccess.thecvf.com/content/ICCV2021W/CVPPA/papers/Stylianou_Classification_and_Visualization_of_Genotype_x_Phenotype_Interactions_in_Biomass_ICCVW_2021_paper.pdf}
 }
 
 %% 2020
@@ -155,28 +223,7 @@ url={https://www.frontiersin.org/articles/10.3389/frai.2022.872858/full}
   organization={Springer, Cham},
   annote={selected,ML}
 }
-
 %% 2019
-
-@misc{schillebeeckx2019camera,
-  title={Camera calibration with lenticular arrays},
-  author={Schillebeeckx, Ian and Pless, Robert},
-  year={2019},
-  month=oct # "~22",
-  note={US Patent 10,455,138}
-}
-
-@article{wang2019high,
-  title={High-throughput phenotyping with deep learning gives insight into the genetic architecture of flowering time in wheat},
-  author={Wang, Xu and Xuan, Hong and Evers, Byron and Shrestha, Sandesh and Pless, Robert and Poland, Jesse},
-  journal={GigaScience},
-  volume={8},
-  number={11},
-  year={2019},
-  publisher={Oxford University Press},
-  annote={biological}
-}
-
 @inproceedings{zhai2019learning,
   title={Learning geo-temporal image features},
   author={Zhai, Menghua and Salem, Tawfiq and Greenwell, Connor and Workman, Scott and Pless, Robert and Jacobs, Nathan},
@@ -194,13 +241,12 @@ url={https://www.frontiersin.org/articles/10.3389/frai.2022.872858/full}
 @article{boyle2019regularization,
   title={Regularization-Free Strain Mapping in Three Dimensions, With Application to Cardiac Ultrasound},
   author={Boyle, John J and Soepriatna, Arvin and Damen, Frederick and Rowe, Roger A and Pless, Robert B and Kovacs, Attila and Goergen, Craig J and Thomopoulos, Stavros and Genin, Guy M},
-  journal={Journal of biomechanical engineering},
+  journal={Journal of Biomechanical Engineering},
   volume={141},
   number={1},
   pages={011010},
   year={2019},
-  publisher={American Society of Mechanical Engineers},
-  annote{selected,biological}
+  publisher={American Society of Mechanical Engineers}
 }
 
 @InProceedings{WACVVis2019,
@@ -212,7 +258,7 @@ annote={ML},
 year = {2019}
 }
 
-@InProceedings{Hotels50,
+@InProceedings{Hotels50k,
 author = {Abby Stylianou and Hong Xuan and Maya Shende and Richard Souvenir and Robert Pless},
 title = "Hotels-50K: A Global Hotel Recognition Dataset",
 booktitle = AAAI,
@@ -229,8 +275,7 @@ year = {2019}
   booktitle={2018 IEEE Applied Imagery Pattern Recognition Workshop (AIPR)},
   pages={1--6},
   year={2018},
-  organization={IEEE},
-  annote={social}
+  organization={IEEE}
 }
 
 @misc{boyle2018system,
@@ -271,7 +316,7 @@ year = {2018}
   organization={IEEE}
 }
 
-@InProceedingsunknown{HongICRAE,
+@InProceedings{HongICRAE,
 author = {Xuan, Hong and Schillebeeckx, Ian and Pless, Robert},
 year = {2017},
 month = {12},
@@ -332,7 +377,7 @@ annote={webcams,social}
 url={http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w16/papers/Stylianou_SparkleGeometry_Glitter_Imaging_CVPR_2016_paper.pdf}
 }
 
-@inproceedings{schillebeeckx2016CVPR,
+@inproceedings{schillebeeckx2016pose,
   title={Single Image Camera Calibration with Lenticular Arrays for Augmented Reality},
   author={Ian Schillebeeckx and Robert Pless},
   booktitle=CVPR,
@@ -341,7 +386,7 @@ url={http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w16/pap
   annote={geometry,selected}
 }
 
-@Article{frontiers2016,
+@Article{hipp2016webcams,
   title={Webcams, crowdsourcing, and enhanced crosswalks: Developing a novel method to analyze active transportation},
   author={Hipp, J Aaron and Manteiga, Alicia and Burgess, Amanda and Stylianou, Abby and Pless, Robert},
   journal={Frontiers in Public Health},
@@ -361,7 +406,7 @@ url={http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w16/pap
 }
 
 %% 2015
-@article{tinkum2015fasting,
+@article{Tinkum,
   title={Fasting protects mice from lethal DNA damage by promoting small intestinal epithelial stem cell survival},
   author={Tinkum, Kelsey L and Stemler, Kristina M and White, Lynn S and Loza, Andrew J and Jeter-Jones, Sabrina and Michalski, Basia M and Kuzmicki, Catherine and Pless, Robert and Stappenbeck, Thaddeus S and Piwnica-Worms, David and others},
   journal={Proceedings of the National Academy of Sciences},
@@ -384,10 +429,10 @@ url={http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w16/pap
   annote={webcams,ugrad,selected,ML}}
 
 
-@inproceedings{schillebeeckx,
+@inproceedings{schillebeeckx3DV,
   title={The Geometry of Colorful, Lenticular Fiducial Markers},
   author={Ian Schillebeeckx and Joshua Little and Robert Pless},
-  booktitle=3DV,
+  booktitle=TDV,
   year={2015},
   organization={IEEE},
   url="papers/3DVlenticular.pdf",
@@ -401,11 +446,11 @@ annote={sensorFusion,geometry}
   pages={892--898},
   year={2015},
   organization={IEEE},
-  url="https://web.archive.org/web/20150928061700/http://www.cse.wustl.edu/~astylianou/papers/featuresOverTime.pdf",
+  url="http://www.cse.wustl.edu/~astylianou/papers/featuresOverTime.pdf",
 annote={webcams}
 }
 
-@inproceedings{schillebeeckxPlessICCP2014,
+@inproceedings{schillebeeckxICCP2015,
 title={Structured Light Field Design for Correspondence Free Rotation Estimation},
 author={Ian Schillebeeckx and Robert Pless},
 booktitle=ICCP,
@@ -435,7 +480,7 @@ doi={2811780.2811941},
 
 
 %% 2014
-@InProceedings{abramsICCP2014,
+@InProceedings{abrams2014shadowtracking,
  author = 	 {Austin Abrams and Ian Schillebeeckx and Robert Pless},
   title = 	 {Structure from Shadow Motion},
   booktitle =	 ICCP,
@@ -471,7 +516,7 @@ annote = "webcams,selected,geometry"
   year={2014},
   publisher={The Royal Society},
   annote={biological,selected},
- URL = {https://doi.org/10.1098/rsif.2014.0685}
+ URL = {http://rsif.royalsocietypublishing.org/content/11/100/20140685}
 }
 
 @article{freudenburg2014fast,
@@ -497,7 +542,7 @@ URL="http://www.pnas.org/content/111/12/4602.short"
 }
 
 %% 2013
-@inproceedings{stylianou2013finding,
+@inproceedings{stylianou2013,
   title={Finding {J}ane {D}oe: a forensic application of 2D image calibration},
   author={Stylianou, Abby and Abrams, Austin and Pless, Robert},
   year={2013},
@@ -505,7 +550,7 @@ URL="http://www.pnas.org/content/111/12/4602.short"
   booktitle={5th International Conference on Imagining for Crime Detection and Prevention (ICDP)},
   pages={97-102},
   annote={social,geometry,selected},
-  URL={https://web.archive.org/web/20170922004614/http://www.cse.wustl.edu/~astylianou/papers/Finding_Jane_Doe.pdf}
+  URL={http://www.cse.wustl.edu/~astylianou/papers/Finding_Jane_Doe.pdf}
 }
 
 @inproceedings{stark2013ng2,
@@ -566,7 +611,7 @@ URL={http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=1660820
   publisher={IEEE},
   url={papers/twoCloudsPAMI.pdf},
 }
-@article{Abrams:2013:WGI:2422956.2422964,
+@article{Abrams2013TOMCAP,
  author = {Abrams, Austin and Pless, Robert},
  title = {Web-accessible geographic integration and calibration of webcams},
  journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
@@ -766,7 +811,7 @@ volume=7,
 number=6,
 year=2010,
 pages={1677-1688},
-URL = {https://doi.org/10.1098/rsif.2010.0210}, 
+URL = {http://rsif.royalsocietypublishing.org/content/early/2010/05/25/rsif.2010.0210.abstract}, 
 eprint = {http://rsif.royalsocietypublishing.org/content/early/2010/05/25/rsif.2010.0210.full.pdf+html}, 
 annote={biological}
 }
@@ -812,7 +857,7 @@ URL="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5205937"
   volume=67,
 number=1,
 pages={56-69},
-  URL={https://doi.org/10.1002/cm.20424},
+  URL={http://www3.interscience.wiley.com/journal/123210660/abstract},
   annote = {biological}
 }
 
@@ -824,7 +869,7 @@ pages={56-69},
   pages={83-94},
   year={2009},
   annote={isomap,ML},
-  URL={https://doi.org/10.2197/ipsjtcva.1.83},
+  URL={http://www.jstage.jst.go.jp/article/ipsjtcva/1/0/83/_pdf},
   abstract = {Many natural image sets are samples of a low-dimensional manifold in the space of all possible images. Understanding this manifold is a key first step in understanding many sets of images, and manifold learning approaches have recently been used within many application domains, including face recognition, medical image segmentation, gait recognition and hand-written character recognition. This paper attempts to characterize the special features of manifold learning on image data sets, and to highlight the value and limitations of these approaches.}
 }
 
@@ -835,7 +880,7 @@ pages={56-69},
   pages = {1-6},
   year = 2008,
   annote={manifold,segmentation,selected},
-URL="https://doi.org/10.1109/CVPR.2008.4587740"}
+URL="papers/georg2008cvpr.pdf"}
 }
 @inproceedings{georgMMBIA2008,
   author = {Manfred Georg and Richard Souvenir and Andrew Hope and Robert Pless},
@@ -885,9 +930,7 @@ annote = {manifold,selected,ML}
   booktitle = 	 CVPR,
   pages     = {1092-1098},
   year =	 2006,
-  annote = {ML, isomap};
-url = "http://doi.ieeecomputersociety.org/10.1109/CVPR.2006.214",
-abstract = {biological,isomap,CT}
+  annote = {ML, isomap}
 }
 
 @InProceedings{manifoldInterpICIP,
@@ -896,8 +939,7 @@ abstract = {biological,isomap,CT}
   booktitle = 	 ICIP,
   pages = {1437-1440},
   year =	 2006,
-  annote = {ML, isomap};
-url = "papers/ImageManifoldInterp.pdf"
+  annote = {ML, isomap}
 }
 
 @InProceedings{multiSegmentation,
@@ -922,7 +964,7 @@ abstract = {}
  publisher = {IEEE Computer Society},
  address = {Washington, DC, USA},
   annote = {ML, isomap,graphTheory},
-  url = "https://web.archive.org/web/20100610223603/http://www.cse.wustl.edu/~jacobsn/papers/dixon_POCV06.pdf",
+  url = "http://www.cs.wustl.edu/~jacobsn/papers/dixon_POCV06.pdf",
 abstract = {}
  }
 
@@ -935,8 +977,8 @@ Learning with Level Sets},
   booktitle = 	 {IEEE Workshop on Computer Vision for Biomedical Image Applications (LNCS 3765)},
   pages = {479-488},
   year =	 2005,
-  annote = {ML, isomap}
-  url = "https://web.archive.org/web/20070417191803/http://www.cs.wustl.edu/MediaAndMachines/publications/papers/zhang2005levelsets.pdf",
+  annote = {ML, isomap},
+  url = "http://www.cs.wustl.edu/MediaAndMachines/publications/papers/zhang2005levelsets.pdf",
 abstract = {}
 }
 
@@ -958,7 +1000,7 @@ abstract = {}
   pages = {648-653},
   year =	 2005,
   annote = "isomap,clustering,selected,ML",
-  url = "https://doi.org/10.7936/K7R20ZQR",
+  url = "http://www.cse.seas.wustl.edu/techreportfiles/getreport.asp?431",
 }
 
 @InProceedings{plessMotionIsomap,
@@ -1021,7 +1063,7 @@ number = 5,
   year =         {2011},
   abstract = {We describe a complete system for quantitatively measuring the optical distortion in aircraft windshields and automatically classifying that distortion as acceptable or not. The system comprises two parts: The first uses digital imaging of a known grid pattern through the windshield of interest to create a distortion map of that windshield; the second uses the distortion maps created for 100 windshields (some acceptable and some not) and automatically learns a decision-tree-based classifier. We show results that highlight the robustness of this system, including a demonstration that the distortion map for a windshield is consistently measured over 3 years, and cross-validation study shows that we can effectively classify windshields based on the distortion maps.},
 annote = "applications",
-url="https://doi.org/10.1007/s00138-010-0258-z"
+url="http://www.cs.wustl.edu/~msd2/publications/mvap2010.pdf"
 }
 
 @inproceedings{abrams10webcams,
@@ -1031,7 +1073,7 @@ url="https://doi.org/10.1007/s00138-010-0258-z"
   month = {Jun},
 pages={331-340},
   booktitle=ACMMM,
-URL="https://web.archive.org/web/20160804025340/http://research.engineering.wustl.edu/~abramsa/papers/webcams_in_context.pdf",
+URL="http://research.engineering.wustl.edu/~abramsa/papers/webcams_in_context.pdf",
   annote="webcams,GIS,selected,social"
 }
 
@@ -1043,7 +1085,7 @@ URL="https://web.archive.org/web/20160804025340/http://research.engineering.wust
   month = "Jun",
 pages={1102-1109},
   booktitle=CVPR,
-URL={https://web.archive.org/web/20200201015151/http://cs.uky.edu/~jacobs/papers/jacobs2010depthfromclouds.pdf},
+URL={http://cs.uky.edu/~jacobs/papers/jacobs2010depthfromclouds.pdf},
   annote="webcams,compressive,selected,ugrad"
 }
 
@@ -1105,7 +1147,7 @@ year=2009,
   month=oct,
   booktitle={IEEE ICCV Workshop on Visual Surveillance},
   annote={surveillance,tracking},
-url={https://doi.org/10.7936/K7W09445}
+url={http://cse.wustl.edu/Research/Lists/Technical%20Reports/Attachments/859/sheet_tracking_tr.pdf}
 }
 
 @inproceedings{jacobs09phdforum,
@@ -1128,7 +1170,7 @@ pages={1-8},
   month=Sep,
   booktitle={ACM/IEEE International Conference on Distrubted Smart
    Cameras (ICDSC)},
-  URL="https://web.archive.org/web/20110913104621/http://research.engineering.wustl.edu/~mdixon/publications/icdsc2009.pdf",
+  URL="http://research.engineering.wustl.edu/~mdixon/publications/icdsc2009.pdf",
 annote="surveillance,tracking"
 }
 
@@ -1141,7 +1183,7 @@ annote="surveillance,tracking"
 pages={39-46},
   month=jun,
   booktitle={IEEE CVPR Workshop on Internet Vision},
-  URL={https://web.archive.org/web/20110913132635/http://www.cse.wustl.edu/~jacobsn/papers/iv_2009/jacobs09webcamdata.pdf},
+  URL={http://www.cse.wustl.edu/~jacobsn/papers/iv_2009/jacobs09webcamdata.pdf},
 annote={webcams,ugrad,ML,social}
 }
 
@@ -1196,7 +1238,7 @@ annote={webcams,ugrad,ML,social}
 pages={1-8},
   year = 2008,
  annote={surveillance,tracking},
-url={https://web.archive.org/web/20110913104657/http://research.engineering.wustl.edu/~mdixon/publications/wmvc2008.pdf},
+url={http://research.engineering.wustl.edu/~mdixon/publications/wmvc2008.pdf},
 }
 
 @InProceedings{jacobs08VISN,
@@ -1205,7 +1247,7 @@ url={https://web.archive.org/web/20110913104657/http://research.engineering.wust
   booktitle =	 VISN,
 pages={1-6},
   year =	 2008,
-url={https://doi.org/10.1109/wacv.2008.4544040},
+url={http://cs.engr.uky.edu/~jacobs/papers/wacv_2008/jacobs08geoorient.pdf},
 annote={webcams,calibration,ugrad}
 }
 
@@ -1217,7 +1259,7 @@ annote={webcams,calibration,ugrad}
   month = Jun,
   booktitle=CVPR,
 pages={1-6},
-  URL={https://web.archive.org/web/20080221232109/http://www.cs.wustl.edu/MediaAndMachines/publications/papers/jacobs2007cvpr.pdf},
+  URL={http://www.cse.wustl.edu/\~{}jacobsn/papers/cvpr_2007/jacobs2007amos.pdf},
   project={http://www.cse.wustl.edu/\~{}jacobsn/projects/webcam_dataset/},
 annote={webcams,ugrad,selected}
 }
@@ -1242,7 +1284,7 @@ annote={webcams,ugrad,selected}
   year =	 2007,
 pages={27-32},
   annote = "surv",
-url = "https://web.archive.org/web/20070824085013/http://www.cse.wustl.edu/~jacobsn/papers/wmvc_2007/jacobs_WMVC07.pdf",
+url = "http://www.cs.wustl.edu/~jacobsn/papers/wmvc_2007/jacobs_WMVC07.pdf",
  annote="surveillance,tracking"
 }
 
@@ -1260,7 +1302,7 @@ url = "https://web.archive.org/web/20070824085013/http://www.cse.wustl.edu/~jaco
  doi = {http://doi.acm.org/10.1145/1178782.1178805},
  publisher = {ACM Press},
  address = {New York, NY, USA},
-url="https://web.archive.org/web/20070824092312/http://www.cse.wustl.edu/~jacobsn/papers/vssn_2006/jacobs_vssn06.pdf",
+url="http://www.cse.wustl.edu/~jacobsn/papers/vssn_2006/jacobs_vssn06.pdf",
 annote="surveillance"
 }
 
@@ -1370,7 +1412,7 @@ annote = "surveillance,selected"
   booktitle={IEEE International Conference on Acoustics, Speech, and
     Signal Processing (ICASSP)},
 pages={718-721},
-URL={https://web.archive.org/web/20190705184138/http://cs.uky.edu/~jacobs/papers/jacobs2010csmotion.pdf},
+URL={http://cs.uky.edu/~jacobs/papers/icassp_2010/jacobs2010csmotion.pdf},
 annote="compressive,sensorFusion,geometry",
 abstract="Compressive-sensing cameras are an important new class of sensors that have different design constraints than standard cameras. Surprisingly, little work has explored the relationship between compressive-sensing measurements and differential image motion. We show that, given modest constraints on the measurements and image motions, we can omit the computationally expensive compressive-sensing reconstruction step and obtain more accurate motion estimates with significantly less computation time. We also formulate a compressive-sensing reconstruction problem that incorporates known image motion and show that this method outperforms the state-of-the-art in compressive-sensing video reconstruction. "
 }
@@ -1392,7 +1434,7 @@ abstract="Compressive-sensing cameras are an important new class of sensors that
   title = 	 {Faster and More Accurate Face Detection on Mobile Robots Using Geometric Constraints}, 
   booktitle = 	 IROS,
   year =	 2007,
-  url = "https://web.archive.org/web/20080424155133/http://www.cse.wustl.edu/~wds/content/papers/2007/iros07b.pdf",
+  url = "http://www.cse.wustl.edu/~msd2/publications/dixon2007iros.pdf",
   annote = "sensorFusion,ML,social,geometry"
 }
 
@@ -1403,7 +1445,7 @@ abstract="Compressive-sensing cameras are an important new class of sensors that
   booktitle = 	 IROS,
   pages = {2301-2306},
   year =	 2004,
-  url = "https://web.archive.org/web/20100610232652/http://www.cs.wustl.edu/~zql/pdf/ManualCalib.pdf",
+  url = "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.80.7118&rep=rep1&type=pdf",
   annote = "sensorFusion,sensorDesign,geometry"
 }
 
@@ -1413,7 +1455,7 @@ abstract="Compressive-sensing cameras are an important new class of sensors that
   booktitle = 	 {Proceedings of the IEEE International Conference on Image Processing (ICIP)},
   year =	 2004,
   pages     = {3403-3406},
-  url = "https://web.archive.org/web/20100610233143/http://www.cs.wustl.edu/~zql/pdf/sfmLaser.pdf",
+  url = "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.76.2399&rep=rep1&type=pdf",
   annote = "sensorFusion,sensorDesign,geometry"
 }
 
@@ -1424,7 +1466,7 @@ abstract="Compressive-sensing cameras are an important new class of sensors that
   booktitle = 	 {IEEE Workshop on Realtime 3D Sensors and Their Use},
   pages =	 {38-43},
   year =	 2004,
-  url = "https://web.archive.org/web/20100610234713/http://www.cs.wustl.edu/~zql/pdf/autoCalib.pdf",
+  url = "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.64.7864&rep=rep1&type=pdf",
   annote = "sensorFusion,geometry"
 }
 
@@ -1437,7 +1479,7 @@ abstract="Compressive-sensing cameras are an important new class of sensors that
   volume =	 11,
   number =	 4,
   pages =	 {39-44},
-  url="https://doi.org/10.1109/MRA.2004.1371607",
+  url="http://ieeexplore.ieee.org/xpl/abs_free.jsp?arNumber=1371607",
   annote = "sensorFusion,sensorDesign,geometry"
 }
 
@@ -1458,7 +1500,7 @@ URL="http://spie.org/x648.html?product_id=571537"
   address =	 {Madison Wisconsin},
   editor =	 {Robert Pless and Jose Santos-Victor and Yasushi Yagi},
   organization = {IEEE Computer Society},
-  url="https://web.archive.org/web/20171017124025/http://www.cs.wustl.edu/~pless/omnivis2003/program.html",
+  url="../omnivis2003/program.html",
 annote = "sensorFusion"
 }
 
@@ -1470,7 +1512,7 @@ annote = "sensorFusion"
 pages = {345-363},
   year = 	 {2006},
   editor =      {Kostas Daniilidis and Reinhard Klette and Alex Leonardis},
-  URL = {https://doi.org/10.1007/978-1-4020-4894-4_18},
+  URL = {http://www.springerlink.com/content/l43k866072713057/},
   annote = "sensorFusion"}
 }
 
@@ -1489,7 +1531,7 @@ annote = "sensorFusion,selected,sensorDesign,geometry"}
   booktitle = 	 {Proc. of the IEEE Workshop on Omnidirectional Vision},
   year = 	 2002,
   pages = {53-59},
-url = "papers/Pless_Omni.pdf",
+url = "papers/pless_Omni.pdf",
 annote = "sensorFusion"
 }
 
@@ -1500,7 +1542,7 @@ year = 2001,
   pages     = {576-583},
 booktitle = CVPR,
 annote = "sensorFusion,geometry",
-url = "https://web.archive.org/web/20100621173153/http://www.cfar.umd.edu/~jneumann/Papers/bake01f.pdf"
+url = "http://www.cfar.umd.edu/~jneumann/Papers/bake01f.pdf"
 }
 
 @PhdThesis{plessphd,
@@ -1538,7 +1580,7 @@ annote = "sensorFusion"
 %%%% Sensor Networks and Graph Theory
 %%%%%%%%%%%%%%%%%%%%%%%% 2009
 
-@Article{xingPless2010,
+@Article{Pless2010,
   author =       {Guoliang Xing and Xiangmao Chang and Chenyang Lu and Jianping Wang
 and Robert Pless and Joseph A O'Sullivan},
   title =        {Efficient Coverage Maintenance Based on Probabilistic Distributed Detection},
@@ -1548,7 +1590,7 @@ and Robert Pless and Joseph A O'Sullivan},
   number = 9,
   pages =     {1346-1360},
 annote = {sensorNetworks},
-  url={https://doi.org/10.1109/TMC.2010.84}
+  url={http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5456373}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%% 2007
@@ -1585,7 +1627,7 @@ volume = {17},
  year = {2006},
  issn = {1045-9219},
  pages = {348--360},
-  url = {https://web.archive.org/web/20070417144323/http://www.cse.wustl.edu/~xing/docs/tpds05.pdf},
+  url = {http://www.cse.wustl.edu/~xing/docs/tpds05.pdf},
   annote = "sensorNetworks,graphTheory"
 }
 %%%%%%%%%%%%%%%%%%%%%%%% 2006
@@ -1598,7 +1640,7 @@ volume = {17},
  year = {2005},
  issn = {1550-4859},
  pages = {36--72},
-url="https://www.cse.wustl.edu/~lu/papers/tosn_ccp.pdf",
+url="http://www.cens.ucla.edu/sensys03/proceedings/p28-wang.pdf",
  publisher = {ACM Press},
  address = {New York, NY, USA},
 annote = {sensorNetworks}
@@ -1611,7 +1653,7 @@ annote = {sensorNetworks}
 pages = {390-401},
   year =	 2005,
   address =	 {Urbana-Champaign, IL},
-  url={https://web.archive.org/web/20070417171827/http://www.cse.wustl.edu/~xing/docs/f1568951884-xing.pdf},
+  url={http://www.cse.wustl.edu/~xing/docs/f1568951884-xing.pdf},
   annote = "sensorNetworks"}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2004
@@ -1708,7 +1750,7 @@ annote = "biological"
   booktitle = 	 { Vision Interface},
   pages = {395-401},
   year =	 2003,
-  url = 	 {https://web.archive.org/web/20070417201902/http://www.cs.wustl.edu/MediaAndMachines/publications/papers/VIObjCap2003.pdf},
+  url = 	 {http://www.cs.wustl.edu/MediaAndMachines/publications/papers/VIObjCap2003.pdf},
 annote = "misc,sensorFusion"}
 
 
@@ -1718,7 +1760,7 @@ annote = "misc,sensorFusion"}
   booktitle = 	 { Vision Interface},
 pages = {311-318},
   year =	 2003,
-  url = {https://web.archive.org/web/20070417180233/http://www.cs.wustl.edu/MediaAndMachines/publications/papers/VIPaper2003.pdf},
+  url = {http://www.cs.wustl.edu/MediaAndMachines/publications/papers/VIPaper2003.pdf},
 annote = "misc,sensorFusion"
 }
 
@@ -1737,7 +1779,7 @@ annote = "misc,sensorFusion"
   volume =	 40,
   number =	 1,
   pages =	 {77-95},
-  url="https://doi.org/10.1016/S0042-6989(99)00162-5",
+  url="http://citeseer.ist.psu.edu/64916.html",
 annote = "opticIllusions"
 }
 
@@ -1782,7 +1824,7 @@ annote = "opticIllusions"
   volume =	 91,
   number =	 5,
   pages =	 {2637-2642},
-URL = "https://doi.org/10.1121/1.402971",
+URL = "http://asadl.org/jasa/resource/1/jasman/v91/i5/p2637_s1?isAuthorized=no",
   annote = "misc,ugrad"
 }
 
