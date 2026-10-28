@@ -3,7 +3,7 @@
 Last updated: 2026-10-28
 
 ## Project snapshot
-Static port of www2.seas.gwu.edu/~pless/ for GitHub Pages at https://pless.github.io. First version built and checked 2026-10-28.
+Static port of www2.seas.gwu.edu/~pless/ for GitHub Pages at https://pless.github.io. First version published 2026-10-28.
 
 ---
 
@@ -11,7 +11,7 @@ Static port of www2.seas.gwu.edu/~pless/ for GitHub Pages at https://pless.githu
 Tab/folder: Claude Code desktop; folder ~/projects/pless-webpage
 
 - **Goal:** pless.github.io shows the content of the GWU site in the same style, and works on phones.
-- **Now:** first version published.
+- **Now:** first version live at https://pless.github.io since 2026-10-28, from the public repo github.com/pless/pless.github.io (GitHub Pages, branch `main`, folder `/`). All 119 site files load there, and the publication views and student photos work.
 - **Next:** Robert reviews the site and `notes/2026-10-28-port-review.md`: out-of-date text, typos, 8 local links and 56 external links that were already dead on the GWU site.
 - **Blockers:** none.
 - **Key files:** tools/build.py, style.css, pubs/plessRefs.bib
