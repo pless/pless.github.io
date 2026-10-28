@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robert Pless - George Washington University - Computer Vision</title>
+<meta name="description" content="Robert Pless, Patrick and Donna Martin Professor and Chair of Computer Science at George Washington University. Research in computer vision.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="page">
+<!-- begin sidebar -->
+<header class="sidebar">
+  <div class="card profile">
+    <img class="portrait" src="webImages/pless-280.jpg" width="140" height="145" alt="Robert Pless">
+    <h1 class="name">Robert Pless</h1>
+    <p>Patrick and Donna Martin Professor and<br> Chair of Computer Science</p>
+    <p>George Washington University</p>
+    <p>SEH Bldg, Suite 4000</p>
+    <p><a href="mailto:pless@gwu.edu">pless@gwu.edu</a></p>
+  </div>
+  <nav class="card site-menu" aria-label="Site menu">
+    <ul>
+      <li><a href="index.html" aria-current="page">home</a></li>
+      <li><a href="people.html">students</a></li>
+      <li><a href="teaching.html">teaching</a></li>
+      <li><a href="publications.html">publications</a></li>
+      <li><a href="awards.html">awards/press</a></li>
+      <li><a href="opportunities.html">join my group</a></li>
+      <li><a href="code.html">code</a></li>
+      <li><a href="longCVbibtex.pdf">CV</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- end sidebar -->
+<main class="card content" id="content">
+<h2>Updates:</h2>
+<ul>
+  <li>The Gates Foundation is funding <a href="https://gcgh.grandchallenges.org/grant/large-language-model-llm-tool-support-frontline-health-workers-low-resource-settings">our pilot project to explore how LLMs can support Frontline Health Workers</a></li>
+  <li>I'm serving as (co-)Program Chair of CVPR 2024; I hope to see you in Seattle!</li>
+  <li>I'm excited to be part of the brand new UMD + GW + Morgan State NSF Trails Institute, <a href="https://www.trails.umd.edu/research">Trustworthy AI in Law and Society</a>.</li>
+  <li>Apply to our NSF NRT program on <a href="https://dtais.seas.gwu.edu/">Designing Trustworthy AI Systems</a> to have formal training in thinking about risks and challenges of real-world AI systems (and get a year of flexible funding for your PhD!).</li>
+  <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9289439/">Comparing Deep Learning Approaches for Understanding Genotype × Phenotype Interactions in Biomass Sorghum"</a> appeared in Frontiers in AI.</li>
+  <li>"GradCAM" style visualization tools for image similarity metrics learned by transformers <a href="https://openaccess.thecvf.com/content/WACV2022/html/Black_Visualizing_Paired_Image_Similarity_in_Transformer_Networks_WACV_2022_paper.html">"Visualizing Paired Image Similarity in Transformer Networks [WACV 2022]</a>.</li>
+</ul>
+<h2>Research</h2>
+<p>My research is in the area of computer vision with applications to
+environmental science, medical imaging, robotics and virtual reality.
+I am particularly interested in data-driven and geometric techniques
+to more robustly understand images taken "in the wild".  This research
+exploits the fact that cameras are incredibly precise measurement
+systems --- if they are calibrated properly, then the vast quantities
+of visual data they collect can help to learn, understand, and
+manipulate the world around us.  At a high level, the current themes
+of research in my lab are:</p>
+<ul>
+  <li><b>Understand visual change at scales from the sidewalk to the planet:</b>
+    What can you do with a billion images?  Webcams, iPhones, and flocks
+    of micro-satellites a visual depiction of the Earth at an
+    unprecedented temporal and spatial coverage.  Our aim is to organize
+    these disparate image sources to create coherent global imaging
+    systems that answer important questions facing our society and our
+    planet.  Specifically, we work to understand physical principles that
+    govern image formation in realistic environments, and we use those in
+    application domains that include: Understanding patterns of
+    tree-growth at a continental scale, characterizing the use of public
+    spaces over time, and creating generalizable models to
+    learn how image appearance varies over time.</li>
+  <li><b>Next generation imaging systems:</b>
+    All Virtual Reality and Robotics applications require fast visual
+    reasoning systems to characterize the 3D world and pose of objects
+    within that world.  The objective of this research effort is to
+    understand and overcome the fundamental limits of cameras and
+    materials that make that task difficult.  Specifically, our work has
+    developed the theory of motion estimation from multi-perspective and
+    compressive sensing cameras, fundamental constraints for calibrating
+    cameras with other sensing systems, and the design of new light-field
+    modulating materials that make geometric inference especially easy.</li>
+  <li><b>Democratizing Visual Analytics and Applications to Social Justice:</b>
+    What can our community do to make visual reasoning more available to
+    more people?  Our lab works to make web implementations and
+    smart-phone apps that support the broader publics ability to create
+    and use visual inference across many applications.  This includes apps
+    to support Citizen Science through repeat photography, and the
+    geocalibration.org website that allows the precise geo-location of an
+    image with respect to Google Maps which was used to find the lost
+    grave of a Jane Doe crime victim from 30 years ago.</li>
+</ul>
+<h2>Dataset, Apps, and Frequently Requested Code</h2>
+<ul>
+  <li>The Archive of Many Outdoor Scenes
+    (<a href="http://amos.cse.wustl.edu">AMOS</a>).</li>
+  <li><a href="http://traffickcam.org">TraffickCam</a>, an app to crowd source the creation of a continually
+    updated index of the appearance of hotel rooms to support
+    investigations of sex trafficking.</li>
+  <li>Citizen Science Repeat Photography App and Data
+    (<a href="http://projectrephoto.com">rePhoto</a>).</li>
+  <li>Code (<a href="code/manifoldVis.zip">12 KB zip file</a>) for
+    matlab and web visualizations of image manifolds, from the paper: "A
+    Survey of Manifold Learning for Images", Robert Pless and Richard
+    Souvenir, IPSJ Transactions on Computer Vision and Applications,
+    vol. 1 pp. 83-94, 2009.
+    <a href="publications.html#plessSouvenirSurvey2009">(bib)</a></li>
+  <li>Code (<a href="code/calibZip.zip">2.3 MB zip file</a>) from our
+    paper: "Extrinsic Calibration of a Camera and Laser Range Finder",
+    Qilong Zhang, Robert Pless, IROS 2004,
+    <a href="publications.html#zhangIROS">(bib)</a>,</li>
+</ul>
+</main>
+</div>
+</body>
+</html>

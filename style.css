@@ -1,0 +1,192 @@
+/* Robert Pless - site style.
+   The look follows the GWU site (www2.seas.gwu.edu/~pless/mystyle.css):
+   gray page, gray cards, left column with photo and menu, section
+   headings with an olive top rule. Link colors are darker than the
+   original so that they meet WCAG AA contrast on the card gray. */
+
+:root {
+  --page-bg: #aaaaaa;
+  --card-bg: #d4d4d4;
+  --code-bg: #e4e4e4;
+  --text: #111111;
+  --muted: #3a3a3a;
+  --link: #2b5f45;
+  --link-visited: #1d4f1d;
+  --link-hover: #550055;
+  --heading: #555588;
+  --subheading: #444488;
+  --rule: #555500;
+  --pub-title: #344a4a;
+  --highlight: #e6e6c8;
+}
+
+* { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:visited { color: var(--link-visited); }
+a:hover, a:focus-visible { color: var(--link-hover); text-decoration: underline; }
+:focus-visible { outline: 2px solid var(--link-hover); outline-offset: 2px; }
+
+img { max-width: 100%; height: auto; }
+
+.skip { position: absolute; left: -9999px; top: 0; }
+.skip:focus { left: 10px; top: 10px; z-index: 10; background: #fff; padding: 4px 8px; }
+
+/* ---------- layout ---------- */
+
+.page {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 10px;
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 10px;
+  align-items: start;
+}
+
+.card { background: var(--card-bg); padding: 10px 12px; }
+
+.sidebar { display: grid; gap: 10px; }
+
+.profile p { margin: 0 0 0.9em; }
+.profile p:last-child { margin-bottom: 0; }
+.portrait { display: block; width: 140px; margin: 0 auto 12px; }
+.name { font-size: 1.05rem; margin: 0 0 0.9em; }
+
+.site-menu ul { list-style: none; margin: 0; padding: 0; }
+.site-menu a { display: block; padding: 1px 0; }
+.site-menu a[aria-current="page"] { color: var(--text); font-weight: bold; }
+
+.content { padding: 12px 22px 40px; min-width: 0; overflow-wrap: break-word; }
+
+.content h2 {
+  font-size: 1.05rem;
+  color: var(--heading);
+  border-top: 4px solid var(--rule);
+  margin: 1.4em 0 0.5em;
+  padding-top: 2px;
+}
+.content > h2:first-child, .content > :first-child h2:first-child { margin-top: 0; }
+
+.content h3 {
+  font-size: 1rem;
+  color: var(--subheading);
+  margin: 1.2em 0 0.3em;
+}
+
+.content li { margin: 0.3em 0; }
+.content ul.square { list-style-type: square; }
+
+/* Course pages: one column, no sidebar. */
+.page--single { grid-template-columns: minmax(0, 1fr); max-width: 900px; }
+.crumb { font-size: 0.9rem; margin: 0 0 1em; }
+
+/* ---------- students (people.html) ---------- */
+
+.feature {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 6px 0 10px;
+  margin-bottom: 8px;
+}
+.feature img { height: 200px; width: auto; flex: none; }
+.feature p { margin: 0; max-width: 32em; }
+
+.people-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 16px;
+  text-align: center;
+}
+.people-col h2 { margin-top: 0; }
+.people { list-style: none; margin: 0 0 1.4em; padding: 0; }
+.people li { margin: 0.1em 0; }
+.people.alumni { font-style: italic; }
+.person {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0 3px;
+  text-align: center;
+  cursor: default;
+}
+a.person { color: var(--link); cursor: pointer; }
+.person:hover, .person.is-active { background: var(--highlight); }
+
+/* ---------- publications (publications.html) ---------- */
+
+.pub-views a[aria-current] { color: var(--text); font-weight: bold; }
+.pub-count { color: var(--muted); font-size: 0.9rem; min-height: 1.3em; }
+
+.pub-group h3 { color: var(--text); margin: 1.1em 0 0.4em; }
+.pubs { list-style: none; margin: 0; padding: 0; }
+.pub {
+  display: grid;
+  grid-template-columns: 3.4em minmax(0, 1fr);
+  gap: 0 0.4em;
+  margin: 0 0 0.75em;
+  padding: 2px 0;
+}
+.pub-num { text-align: right; color: var(--muted); }
+.pub-title { font-weight: bold; color: var(--pub-title); }
+.pub-title:visited { color: var(--pub-title); }
+.pub-venue { font-style: italic; }
+.pub-links { white-space: nowrap; }
+.pub-bib { display: inline; }
+.pub-bib summary {
+  display: inline;
+  cursor: pointer;
+  color: var(--link);
+  list-style: none;
+}
+.pub-bib summary::-webkit-details-marker { display: none; }
+.pub-bib pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.8rem;
+  background: var(--code-bg);
+  padding: 8px;
+  margin: 0.4em 0 0.2em;
+}
+.pub:target, .pub.is-target { background: var(--highlight); outline: 2px solid var(--rule); }
+
+/* ---------- phones ---------- */
+
+@media (max-width: 700px) {
+  .page { grid-template-columns: minmax(0, 1fr); padding: 6px; gap: 6px; }
+  .profile {
+    display: grid;
+    grid-template-columns: 84px minmax(0, 1fr);
+    gap: 0 12px;
+    align-items: start;
+  }
+  .portrait { width: 84px; margin: 0; grid-row: 1 / span 6; }
+  .profile p, .name { margin-bottom: 0.25em; }
+  .profile br { display: none; }
+  .site-menu ul { display: flex; flex-wrap: wrap; gap: 2px 16px; }
+  .content { padding: 10px 14px 28px; }
+  .feature img { height: 110px; }
+  .feature { font-size: 0.95rem; }
+  .people-cols { grid-template-columns: minmax(0, 1fr); }
+  .pub { grid-template-columns: minmax(0, 1fr); }
+  .pub-num { text-align: left; }
+}
