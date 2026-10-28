@@ -14,7 +14,7 @@ On 2026-10-28, 80 links on the site did not work. 56 were dead external links, 1
   - co-author's copy: 1
 - **No change, the link works in a browser: 7.** Three PNAS pages, three ACM pages and one WashU repository PDF. They refuse automated checks but open the right page in a browser.
 - **No change, not checked: 2.** The LinkedIn pages of Jay Tucek and Zachary Freudenburg. LinkedIn refuses automated checks and shows profiles only after a sign-in.
-- **No copy found: 3.** They are still dead. See "No copy found" below.
+- **No copy found: 3.** Robert had them removed. See "No copy found" below.
 - **One more change:** the other Google Code link on the code page (livewire-javascript) now goes straight to its page in the Google Code archive. The old address works only through a redirect, which sometimes fails.
 
 Two files came from the GWU server into the site:
@@ -129,9 +129,13 @@ Two files came from the GWU server into the site:
 |---|---|---|---|
 | Lecture Notes | `Lectures/lecture13_recognitionIntro.pptx` | Lectures/lecture13_introRecognition.pptx | file added to the site from the GWU server |
 
-## No copy found (3, still dead)
-- Teaching: "Top Project 2 submissions" and "Top Image Quilting Images" for Computational Photography (`classes/555/project2highlights.html`, `project3highlights.html`). The Wayback Machine never saved them. The nearest saved pages are the assignments themselves: [project 2](https://web.archive.org/web/20160409065655/http://www.cs.wustl.edu/~pless/classes/555/project2.html) and [project 3](https://web.archive.org/web/20160409065701/http://www.cs.wustl.edu/~pless/classes/555/project3.html). Decide: remove the two links, or point them to the assignments.
-- Computer Vision course page: lecture 12, `Lectures/lecture12_introRecognition.pptx` (3/19). The file is not on the GWU server or in the Wayback Machine. The lecture 13 deck (3/21) also covers the history of recognition, but it is probably a different file. Decide: remove the link, or point it to the lecture 13 deck.
+## No copy found (3, removed)
+The Wayback Machine never saved these, and the GWU server does not have them. Robert's decision (2026-10-28): remove them.
+- Teaching: "Top Project 2 submissions" and "Top Image Quilting Images" for Computational Photography, Spring 2016 (`classes/555/project2highlights.html`, `project3highlights.html`). Both items are gone, text and all: the text mattered only because of the links.
+- Computer Vision course page: the slides of the 3/19 lecture (`Lectures/lecture12_introRecognition.pptx`). The schedule line "[3/19] History of Image Recognition" stays, without a link.
+
+## After Robert's new plessRefs.bib
+At 15:01, Robert uploaded a new `pubs/plessRefs.bib` on GitHub (commit 5590107). It had the old dead links again, so I replaced them again by matching the old addresses. All 39 paper fixes in the first table are in the current file. Two entries have new keys: `stylianou2013finding` is now `stylianou2013`, and `xingPless2010` is now `Pless2010`.
 
 ## Seen during the search, not changed
 - Live copies exist for some papers that now point to the Wayback Machine. The files are the same (same size or same MD5). I kept the Wayback copies, because the old author pages also disappeared. Nathan Jacobs's lab site has `https://mvrl.github.io/pdf/<file>.pdf` for `jacobs10integral`, `jacobs10clouds`, `jacobs09multicam`, `jacobs08wacv`, `pocvCylinder`, `jacobsShapes`, `jacobs07amos`, `jacobs09webcamdata` and `vssnModels`. Cindy Grimm's site (cindygr.github.io) has copies of the two 2003 VI papers (`wangVI`, `schroeringVI`).

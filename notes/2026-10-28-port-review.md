@@ -20,7 +20,7 @@ This note lists what the first build of pless.github.io changed from www2.seas.g
 - Ian Simon's photo (`webImages/ian.jpg`) was already missing; he shows the default group image. `webImages/emilyFeder.jpeg` was made smaller (3648 to 600 px wide). `webImages/pless-280.jpg` is a small copy of the portrait for the left column.
 
 ## Broken links
-Replaced on 2026-10-28 by working copies: see `2026-10-28-dead-links.md`. Three local links that were already broken on the GWU site are still dead, because no copy exists: `classes/555/project2highlights.html` and `classes/555/project3highlights.html` (teaching), and `Lectures/lecture12_introRecognition.pptx` (Computer Vision course page).
+Replaced on 2026-10-28 by working copies: see `2026-10-28-dead-links.md`. Three local links that were already broken on the GWU site had no copy anywhere, and Robert had them removed.
 
 ## Content that looks out of date or wrong (kept as it is)
 - Home: the CVPR 2024 update; typos "micro-satellites a visual depiction", "publics ability", a stray quote after "Sorghum".

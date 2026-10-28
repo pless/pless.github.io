@@ -16,6 +16,7 @@ Robert Pless's personal website. GitHub Pages serves it at https://pless.github.
 - Text of a page: edit the page's `.html` file, inside `<main>`.
 - Left column or menu: edit `tools/sidebar.html`, then run `python3 tools/build.py`.
 - New paper: add the entry to `pubs/plessRefs.bib`, put the PDF in `papers/`, set `url={papers/NAME.pdf}`, then run `python3 tools/build.py`. Topic tags go in the `annote` field: `selected`, `geometry`, `ML`, `social`, `ugrad`.
+- `pubs/plessRefs.bib` changed on GitHub (an upload or a web edit): the publications page does not change by itself, because GitHub Pages does not run the build. Pull, run `python3 tools/build.py`, then commit and push `publications.html`.
 - Look at the result: run `python3 -m http.server 8790` in this folder, then open http://localhost:8790.
 - Publish: commit and push to `main`. GitHub Pages shows the new version after about a minute.
 
